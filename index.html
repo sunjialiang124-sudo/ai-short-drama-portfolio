@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI短剧工作台 · 案例演示</title>
+  <meta name="description" content="从剧本理解、导演设计、人审到即梦提示词的短剧制作案例。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b6957'/%3E%3Cpath d='M7 9h18v15H7zM7 13h18M12 9l4 4m3-4 4 4' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="lucide.min.js" defer></script><script src="data.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">跳至内容</a>
+  <header class="topbar"><a class="brand" href="#script"><span class="brand-icon"><i data-lucide="clapperboard"></i></span><span>AI短剧工作台</span></a><span class="demo-badge">案例演示</span><div class="header-end"><span class="offline"><i data-lucide="cloud-off"></i> 无模型调用</span><button class="icon-button" data-action="reset" aria-label="重置演示审核" title="重置演示审核"><i data-lucide="rotate-ccw"></i></button></div></header>
+  <div class="shell">
+    <aside class="sidebar"><div class="project-mark">案例剧目</div><h1>得人恩果千年记</h1><div class="project-meta">第一集 · 竖屏 9:16</div><nav id="nav" aria-label="制作流程"></nav><div class="side-bottom"><i data-lucide="folder-open"></i><div>制作档案<span>已审节选 · 历史提示词</span></div></div></aside>
+    <main id="content" tabindex="-1"><div class="page-top"><div><div class="eyebrow">EPISODE 01 / WORKSPACE</div><h2 id="page-title"></h2><p id="page-subtitle"></p></div><span class="version">展示快照 v1.0</span></div><div id="stage-content"></div></main>
+    <aside class="inspector" id="inspector" aria-label="案例状态"></aside>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="reset-dialog"><form method="dialog"><h2>重置演示审核？</h2><p>清除当前浏览器中的模拟审核与批注，案例原稿保持不变。</p><div class="dialog-actions"><button class="button secondary" value="cancel">取消</button><button class="button primary" value="confirm">重置</button></div></form></dialog>
+</body>
+</html>
